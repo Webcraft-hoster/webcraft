@@ -6,56 +6,49 @@ title: Webcraft Launcher
 <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
 
 <style>
-  body {
+  html, body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Minecraftia', monospace;
     background: url('https://feedback.minecraft.net/hc/article_attachments/35363543357965') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Minecraftia', monospace;
-    color: #ffffff;
+    color: #fff;
   }
 
   .overlay {
-    background-color: rgba(0, 0, 0, 0.75);
-    min-height: 100vh;
+    position: relative;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
   }
 
   .title {
     font-size: 3em;
-    color: #00c853;
+    color: gray;
     margin-top: 40px;
     text-shadow: 2px 2px #000;
-  }
-
-  .content-box {
-    background-color: #2d2d2d;
-    border-radius: 10px;
-    padding: 30px;
-    max-width: 600px;
-    width: 90%;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
   }
 
   .play-bar {
     background-color: #1e1e1e;
     width: 100%;
-    max-width: 600px;
     padding: 10px 20px;
-    border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #444;
   }
 
   .version-selector {
-    position: relative;
+    position: absolute;
+    left: 20px;
   }
 
   .version-selector select {
@@ -84,20 +77,10 @@ title: Webcraft Launcher
   .play-button:hover {
     background-color: #00e676;
   }
-
-  .footer {
-    font-size: 0.8em;
-    color: #ccc;
-    margin-top: 30px;
-  }
 </style>
 
 <div class="overlay">
   <div class="title">WEBCRAFT</div>
-
-  <div class="content-box">
-    <p>Select a version and click Play to launch:</p>
-  </div>
 
   <div class="play-bar">
     <div class="version-selector">
@@ -108,10 +91,6 @@ title: Webcraft Launcher
       </select>
     </div>
     <button class="play-button" onclick="launchGame()">PLAY</button>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 Webcraft. Not affiliated with Mojang or Microsoft.
   </div>
 </div>
 
