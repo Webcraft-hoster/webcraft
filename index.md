@@ -4,8 +4,6 @@ title: Webcraft - Coming Soon
 ---
 
 <div style="text-align: center;">
-  <img src="/WEBCRAFT.png" alt="Webcraft Logo" style="max-width: 300px; margin-top: 50px;">
-</div>
 
 # Coming Soon to Webcraft!
 
