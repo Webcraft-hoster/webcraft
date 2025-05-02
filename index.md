@@ -1,4 +1,4 @@
 ---
-title: Welcome to my blog
+Webcraft: the game will be here soon
 ---
 
