@@ -16,7 +16,7 @@ We’re working hard to bring **Minecraft** to your browser with **Webcraft**. G
 - A custom launcher optimized for the web.
 - Regular updates and new features.
 
-Stay tuned for updates and make sure to follow us for the official launch! 🚀
+Stay tuned for updates and make sure to check back soon! 🚀
 
 ---
 
