@@ -3,8 +3,6 @@ layout: default
 title: Webcraft - Coming Soon
 ---
 
-<div style="text-align: center;">
-
 # Coming Soon to Webcraft!
 
 ### Your Minecraft Java Edition experience will be here soon!
