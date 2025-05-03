@@ -1,102 +1,66 @@
+4
 ---
 layout: default
-title: Webcraft Launcher
 ---
 
-<link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEBCRAFT Launcher</title>
+  <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://cdn.mos.cms.futurecdn.net/qHFzGKFBz7kvxiVyjoe6JJ.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Minecraft', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-    font-family: 'Minecraftia', monospace;
-    background: url('https://feedback.minecraft.net/hc/article_attachments/35363543357965') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-  }
+    .launcher {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 60px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 20px black;
+      width: 400px;
+    }
 
-  .overlay {
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
+    .logo {
+      font-size: 48px;
+      color: #00ff00;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #003300;
+    }
 
-  .title {
-    font-size: 3em;
-    color: gray;
-    margin-top: 40px;
-    text-shadow: 2px 2px #000;
-  }
+    .play-btn {
+      background-color: #00aa00;
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 15px 50px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Minecraft', sans-serif;
+      box-shadow: 3px 3px #003300;
+    }
 
-  .play-bar {
-    background-color: #1e1e1e;
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 2px solid #444;
-  }
-
-  .version-selector {
-    position: absolute;
-    left: 20px;
-  }
-
-  .version-selector select {
-    background-color: #3a3a3a;
-    color: #ffffff;
-    border: 2px solid #555;
-    font-family: 'Minecraftia', monospace;
-    padding: 6px 12px;
-    border-radius: 5px;
-    appearance: none;
-  }
-
-  .play-button {
-    background-color: #00c853;
-    color: #fff;
-    border: none;
-    font-family: 'Minecraftia', monospace;
-    font-size: 1.2em;
-    padding: 10px 40px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #00c853;
-    transition: background 0.2s ease-in-out;
-  }
-
-  .play-button:hover {
-    background-color: #00e676;
-  }
-</style>
-
-<div class="overlay">
-  <div class="title">WEBCRAFT</div>
-
-  <div class="play-bar">
-    <div class="version-selector">
-      <select id="versionSelect">
-        <option value="https://eaglercraft.com/mc/1.5.2">1.5.2</option>
-        <option value="https://eaglercraft.com/mc/1.8.8">1.8.8</option>
-        <option value="https://eaglercraft.com/mc/1.12.2">1.12.2</option>
-      </select>
-    </div>
-    <button class="play-button" onclick="launchGame()">PLAY</button>
+    .play-btn:hover {
+      background-color: #00cc00;
+    }
+  </style>
+</head>
+<body>
+  <div class="launcher">
+    <div class="logo">WEBCRAFT</div>
+    <button class="play-btn" onclick="window.location.href='YOUR_GAME_SESSION_URL';">Play</button>
   </div>
-</div>
-
-<script>
-  function launchGame() {
-    const selectedURL = document.getElementById('versionSelect').value;
-    window.open(selectedURL, '_blank');
-  }
-</script>
+</body>
+</html>
